@@ -3,6 +3,7 @@ resource "azurerm_resource_group" "myresourcegroup" {
   location = "${var.location}"
 }
 
+
 module "web_app_container" {
    source = "app.terraform.io/Alireza-Org1/web-app-container/azurerm”  
    name = "${var.prefix}"
